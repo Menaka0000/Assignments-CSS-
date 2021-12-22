@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case_02</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        header {
+            height: 7vh;
+            background-color: rgba(151, 109, 219, .8);
+        }
+
+        footer {
+            height: 5vh;
+            background-color: rgba(45, 45, 45, 0.8);
+        }
+
+        main {
+            height: 88vh;
+        }
+
+        main > section:nth-child(1) {
+            width: 15%;
+            height: 100%;
+            background-color: black;
+        }
+
+        main > section:nth-child(2) {
+            position: relative;
+            left: 15%;
+            width: 85%;
+            bottom: 100%;
+            height: 100%;
+            background-color: rgb(48, 50, 56);
+        }
+
+        main > section:nth-child(1) > nav {
+            position: relative;
+            color: azure;
+            font-family: Arial;
+            top: 8%;
+
+        }
+
+        main > section:nth-child(1) > nav > ul {
+            list-style-type: none;
+        }
+
+        main > section:nth-child(1) > nav > ul > li {
+            margin-bottom: 15%;
+        }
+
+        header > nav {
+            width: 25%;
+            position: absolute;
+            right: 0;
+            top: 3%;
+            text-align: right;
+        }
+
+        header > nav > ul {
+            font-family: Arial;
+            font-weight: bold;
+            overflow: hidden;
+            list-style-type: none;
+        }
+
+        header > nav > ul > li {
+            float: left;
+            margin-right: 10%;
+        }
+
+        .ani {
+            border: 1px solid azure;
+            position: absolute;
+            height: 30%;
+            width: calc(99.9% / 3);
+            background-color: rgba(78, 80, 82, .5) ;
+        }
+
+        main > section:nth-child(2) > /*section >*/ div:nth-child(2) {
+            left: calc(99.9% / 3);
+        }
+
+        main > section:nth-child(2) > /*section > */div:nth-child(3) {
+            left: calc(99.9% / 3 * 2);
+        }
+        /*main > section:nth-child(2) > section{
+            background-color: azure;
+            position: relative;
+            height: 70%;
+            width: 70%;
+            top: 30%;
+        }*/
+
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>About Us</li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>Contact</li>
+                <li>About Us</li>
+            </ul>
+        </nav>
+    </section>
+    <section>
+        <div class="ani"></div>
+        <div class="ani"></div>
+        <div class="ani"></div>
+   <!--     <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor dolorem maxime, nam pariatur qui sunt
+                temporibus! Expedita fugiat, illum iste laudantium molestias nemo nesciunt quidem, rerum, sapiente similique
+                sit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor dolorem maxime, nam pariatur qui sunt
+            temporibus! Expedita fugiat, illum iste laudantium molestias nemo nesciunt quidem, rerum, sapiente similique
+            sit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor dolorem maxime, nam pariatur qui sunt
+            temporibus! Expedita fugiat, illum iste laudantium molestias nemo nesciunt quidem, rerum, sapiente similique
+            sit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor dolorem maxime, nam pariatur qui sunt
+            temporibus! Expedita fugiat, illum iste laudantium molestias nemo nesciunt quidem, rerum, sapiente similique
+            sit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor dolorem maxime, nam pariatur qui sunt
+            temporibus! Expedita fugiat, illum iste laudantium molestias nemo nesciunt quidem, rerum, sapiente similique
+            sit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor dolorem maxime, nam pariatur qui sunt
+            temporibus! Expedita fugiat, illum iste laudantium molestias nemo nesciunt quidem, rerum, sapiente similique
+            sit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor dolorem maxime, nam pariatur qui sunt
+            temporibus! Expedita fugiat, illum iste laudantium molestias nemo nesciunt quidem, rerum, sapiente similique
+            sit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor dolorem maxime, nam pariatur qui sunt
+            temporibus! Expedita fugiat, illum iste laudantium molestias nemo nesciunt quidem, rerum, sapiente similique
+            sit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor dolorem maxime, nam pariatur qui sunt
+            temporibus! Expedita fugiat, illum iste laudantium molestias nemo nesciunt quidem, rerum, sapiente similique
+            sit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor dolorem maxime, nam pariatur qui sunt
+            temporibus! Expedita fugiat, illum iste laudantium molestias nemo nesciunt quidem, rerum, sapiente similique
+            sit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor dolorem maxime, nam pariatur qui sunt
+            temporibus! Expedita fugiat, illum iste laudantium molestias nemo nesciunt quidem, rerum, sapiente similique
+            sit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor dolorem maxime, nam pariatur qui sunt
+            temporibus! Expedita fugiat, illum iste laudantium molestias nemo nesciunt quidem, rerum, sapiente similique
+            sit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor dolorem maxime, nam pariatur qui sunt
+            temporibus! Expedita fugiat, illum iste laudantium molestias nemo nesciunt quidem, rerum, sapiente similique
+            sit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor dolorem maxime, nam pariatur qui sunt
+            temporibus! Expedita fugiat, illum iste laudantium molestias nemo nesciunt quidem, rerum, sapiente similique
+            sit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor dolorem maxime, nam pariatur qui sunt
+            temporibus! Expedita fugiat, illum iste laudantium molestias nemo nesciunt quidem, rerum, sapiente similique
+            sit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor dolorem maxime, nam pariatur qui sunt
+            temporibus! Expedita fugiat, illum iste laudantium molestias nemo nesciunt quidem, rerum, sapiente similique
+            sit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor dolorem maxime, nam pariatur qui sunt
+            temporibus! Expedita fugiat, illum iste laudantium molestias nemo nesciunt quidem, rerum, sapiente similique
+            sit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor dolorem maxime, nam pariatur qui sunt
+            temporibus! Expedita fugiat, illum iste laudantium molestias nemo nesciunt quidem, rerum, sapiente similique
+            sit.</p>d
+        </section>-->
+    </section>
+</main>
+<footer></footer>
+</body>
+</html>
